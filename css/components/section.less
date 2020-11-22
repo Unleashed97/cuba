@@ -1,0 +1,44 @@
+// main: ../main.less
+.section{
+    margin-top: 90px;
+    border-bottom: 1px solid #D0D4D8;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        padding: 0 100px 100px 100px;
+    }
+
+    &__header{
+        font-family: 'Georgia';
+        font-size: 32px;
+        color: #4E5665;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__text{
+        line-height: 2;
+    }
+
+    &__rm-link{
+        text-align: right;
+        color: #ECB84C;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__content{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &--slider{
+        .section__inner{
+            padding: 0 100px;
+        }
+    }
+}

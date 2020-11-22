@@ -1,0 +1,80 @@
+// main: ../main.less
+.card{
+    display: flex;
+    margin-bottom: 100px;
+    position: relative;
+    padding: 70px 0;
+
+    background: url('../images/about/1.jpg') no-repeat;
+    background-position: right;
+
+    &__text{
+        max-width: 470px;
+        padding: 30px;
+        background-color: #fff;
+        position: relative;
+
+        // position: absolute;
+        // top: 50%;
+        // left: 0;
+        // transform: translateY(-50%);
+
+        &::before, &::after{
+            position: absolute;
+            content: '';
+            width: 33px;
+            height: 33px;
+        }
+
+        &::before{
+            top: 19px;
+            left: 15px;
+            border-left: 2px solid #ECB84C;
+            border-top: 2px solid #ECB84C;
+        }
+        
+        &::after{
+            bottom: 19px;
+            right: 15px;
+            border-right: 2px solid #ECB84C;
+            border-bottom: 2px solid #ECB84C;
+        }
+
+        h3{
+            font-family: 'Georgia';
+            font-size: 24px;
+            color: #4E5665;
+            margin-bottom: 22px;
+            line-height: 1;
+        }
+    }
+
+    &:nth-child(even){
+        background: url('../images/about/2.jpg') no-repeat;
+        background-position: left;
+
+
+        .card__text{
+            margin-left: auto;
+
+            &::before{
+                top: 19px;
+                right: 15px;
+                left: auto;
+                border-left: 0;
+                border-top: 2px solid #ECB84C;
+                border-right: 2px solid #ECB84C;
+            }
+
+            &::after{
+                bottom: 19px;
+                left: 15px;
+                border-right: 0;
+                border-left: 2px solid #ECB84C;
+                border-bottom: 2px solid #ECB84C;
+            }
+        }
+    }
+
+
+}
