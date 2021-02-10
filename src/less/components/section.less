@@ -4,7 +4,7 @@
     &__inner{
         display: flex;
         flex-direction: column;
-        padding: 0 100px 100px 100px;
+        padding-bottom: 100px;
     }
 
     &__header{
@@ -35,9 +35,22 @@
         flex-direction: column;
     }
 
-    &--slider{
-        .section__inner{
-            padding: 0 100px;
+    // MEDIA
+    @media (max-width: @laptop){
+        &__header{
+            font-size: 28px;
+        }
+    }
+
+    @media (max-width: @tablet){
+        &__header{
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: @mobile){
+        &__header{
+            font-size: 21px;
         }
     }
 }

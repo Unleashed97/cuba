@@ -54,4 +54,36 @@
             margin-left: 30px;
         }
     }
+
+    // MEDIA
+    @media (max-width: @laptop){
+        &__title{
+            font-size: 150px;
+        }
+
+        &__subtitle{
+            bottom: -19px;
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: @tablet){
+        &__title{
+            font-size: 120px;
+        }
+        &__subtitle{
+            bottom: -14px;
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: @mobile){
+        &__title{
+            font-size: 90px;
+        }
+        &__subtitle{
+            bottom: -11px;
+            font-size: 12px;
+        }
+    }
 }
