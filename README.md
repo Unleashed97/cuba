@@ -1,6 +1,6 @@
 # cuba
 
-Layout practice #4
+Layout training #4
 
 HTML, LESS, JS, Gulp
 
