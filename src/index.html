@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
     <title>Куба</title>
 </head>
@@ -123,8 +124,47 @@
                 <p class="section__text">
                     Когда вы думаете о Карибском море, вы, вероятно, думаете о Кубе. Это одинокая акация, вырисовывающаяся на фоне горизонта, уходящего в вечность. Это снежная гора почти на экваторе и в пределах видимости суровых пустынь. Это пышная, покрытая пальмами береговая линия океана, это Великая рифтовая долина, которая когда-то угрожала разорвать континент на части, и это густые леса, напоминающие сердце континента.
                 </p>
-                <div class="slider">
+                <!-- <div class="slider">
                     <img src="images/slider/front.jpg" alt="">
+                </div> -->
+
+
+                <div class="slider">
+                    <!-- Slider main container -->
+                    <div class="slider__container swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="slider__wrapper swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="slider__slide swiper-slide">
+                                <div class="slider__image">
+                                    <img src="images/slider/front.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image">
+                                    <img src="images/slider/front.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__image">
+                                    <img src="images/slider/front.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="slider__btn-prev">
+                            <img src="images/slider/Arrow-left.svg" alt="">
+                        </div>
+                        <div class="slider__btn-next">
+                            <img src="images/slider/Arrow-right.svg" alt="">
+                        </div>
+                    
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,6 +217,7 @@
     </footer>
 
     <!-- JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src=js/script.min.js></script>
 </body>
 </html>
