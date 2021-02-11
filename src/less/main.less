@@ -43,9 +43,21 @@ img{
     }
 }
 
+// stop scrolling but display scrollbar
+.stop-scroll{
+    position: fixed;
+    overflow-y: scroll; 
+}
+
+//stop scroll and hide scrollbar
+.no-scroll{
+    overflow-y: hidden;
+}
+
 // COMPONENTS
 @import "components/header";
 @import "components/nav";
+@import "components/burger";
 @import "components/section";
 @import "components/stat";
 @import "components/card";
