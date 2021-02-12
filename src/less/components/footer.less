@@ -60,15 +60,13 @@
         }
         
         &__col-items{
-            height: 0;
             border-bottom: 1px solid black;
             overflow: hidden;
             transition: height .2s linear;
 
-            &.active{
-                height: auto;
+            &:not(.active){
+                display: none;
             }
-            
         }
 
         &__col-title{
@@ -79,6 +77,11 @@
 
         &__col{
             width: 100%;
+            &.active{
+                .footer__col-title::after{
+                    transform: rotate(45deg);
+                }
+            }
         }
 
     }
