@@ -1,0 +1,153 @@
+.cadillac{
+    position: relative;
+    margin-bottom: 53px;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+
+        width: 100%;
+        height: 7px;
+
+        border-radius: 60%;
+
+        background: #212020;
+        opacity: .5;
+        filter: blur(3px);
+
+    }
+
+    &__decor-dot{
+        position: absolute;
+        z-index: 1;
+
+        display: block;
+        width: 32px;
+        height: 32px;
+
+        background-color: rgba(#ECB84C, .75);
+        border-radius: 50%;
+
+        cursor: pointer;
+
+        &--1{
+            top: 120px;
+            left: 150px;
+
+            @media (max-width: @tablet){
+                display: none;
+            }
+
+            @media (max-width: @laptop){
+                top: 90px;
+                left: 120px;
+            }
+        }
+
+        &--2{
+            top: 100px;
+            left: 400px;
+
+            @media (max-width: @tablet){
+                display: none;
+            }
+
+            @media (max-width: @laptop){
+                top: 85px;
+                left: 350px;
+            }
+        }
+
+        &--3{
+            top: 55px;
+            right: 296px;
+
+            @media (max-width: @tablet){
+                display: none;
+            }
+
+            @media (max-width: @laptop){
+                top: 45px;
+                right: 250px;
+            }
+        }
+
+        &--4{
+            bottom: 15px;
+            right: 235px;
+
+            @media (max-width: @tablet){
+                display: none;
+            }
+
+            @media (max-width: @laptop){
+                bottom: 15px;
+                right: 200px;
+            }
+        }
+
+        &:hover::before, &:hover .cadillac__decor-text{
+            opacity: 1;
+
+            pointer-events: none;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: -113px;
+            right: -228px;
+            z-index: 1;
+
+            display: block;
+            width: 243px;
+            height: 121px;
+
+            background-image: url('../images/decor-line.svg');
+
+            opacity: 0;
+
+            transition: opacity .3s ease-in-out;
+
+            pointer-events: none;
+
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            z-index: 1;
+
+            display: block;
+            width: 11px;
+            height: 11px;
+
+            background-color: #FFD600;
+            border-radius: 50%;
+        }
+    }
+
+    &__decor-text{
+        position: absolute;
+        top: -140px;
+        right: -225px;
+        z-index: 1;
+
+        display: block;
+
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 28px;
+
+        color: #505050;
+
+        opacity: 0;
+
+        transition: opacity .3s ease-in-out;
+    }
+}
