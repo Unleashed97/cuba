@@ -1,18 +1,15 @@
 .slider{
-    position: relative;
-    width: 640px;
-    margin: 0 auto;
-    margin-top: 55px;
-    border-radius: 4px;
     
-    box-shadow: 0 2px 25px 0 rgba(#000, .3);
+    position: relative;
+    max-width: 100%;
+    margin: 55px auto 0;
+    padding: 0 30px;
     
     &__container{
+        max-width: 640px;
         overflow: hidden;
+        box-shadow: 0 2px 25px 0 rgba(#000, .3);
         border-radius: 4px;
-    }
-    
-    &__slide{
     }
     &__image{
         display: flex;
@@ -39,11 +36,11 @@
     }
 
     &__btn-prev{
-        left: -20px;
+        left: 10px;
     }
 
     &__btn-next{
-        right: -20px;
+        right: 10px;
     }
 
 }
